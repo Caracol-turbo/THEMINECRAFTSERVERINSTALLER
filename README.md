@@ -1,127 +1,92 @@
-Minecraft Server Installer
+# Minecraft Server Installer
 
-A simple and lightweight Bash-based installer for creating Minecraft servers from your terminal.
+A simple desktop application for creating Minecraft servers without having to manually download files, accept the EULA or write startup scripts.
 
-Instead of manually downloading server files, accepting the EULA, creating startup scripts, and configuring folders, this tool automates the entire process with an easy interactive menu.
+It supports several popular server software options and takes care of most of the setup automatically.
 
-«⚠️ Note: The installer is currently available only in Spanish. An English translation is planned for a future release.»
+## Features
 
----
-
-✨ Features
-
-- Interactive terminal interface
-- Automatic server download
-- Automatic EULA acceptance
-- Startup script generation
-- RAM selection during installation
-- Creates a clean server directory structure
-- Designed to be lightweight and dependency-free (except for common Linux tools)
+- Supports Vanilla, Paper, Purpur, Fabric, Forge and NeoForge
+- Downloads the selected server version automatically
+- Accepts the EULA for you
+- Generates the startup script
+- Lets you choose the amount of RAM
+- Creates a clean server folder ready to use
 
 ---
 
-📦 Supported Server Software
+## Requirements
 
-Currently supported:
+Before running the application, make sure you have:
 
-- ✅ Vanilla
-- ✅ Paper
-- ✅ Purpur
-- ✅ Fabric
-- ✅ Forge (modern versions)
-- ✅ NeoForge
+- **Python 3**
+- **Java 21**
 
-More server software may be added in future releases.
+You can check both with:
 
----
-
-📋 Requirements
-
-Before using the installer, make sure you have:
-
-- Linux
-- Bash
-- Java
-- "curl"
-- "jq"
-
-Example (Debian/Ubuntu):
-
-sudo apt update
-sudo apt install openjdk-21-jre curl jq
+```bash
+python --version
+java -version
+```
 
 ---
 
-🚀 Installation
+## Installation
 
-Clone the repository:
+The recommended way to use the application is through the releases.
 
-git clone https://github.com/yourusername/MinecraftServerInstaller.git
-cd MinecraftServerInstaller
+1. Open the **Releases** page of this repository.
+2. Download the latest release.
+3. Extract the downloaded archive.
+4. Run **`Ejecutar.py`**.
 
-Make the installer executable:
-
-chmod +x installer.sh
-
-Run it:
-
-./installer.sh
+That's it.
 
 ---
 
-🖥️ How It Works
+## Playit.gg
 
-The installer will guide you through a few simple steps:
+> **Current status:** Playit integration is still a work in progress.
 
-1. Select the server software.
-2. Choose a supported Minecraft version.
-3. Enter a server name.
-4. Select the amount of RAM.
-5. Wait while the installer downloads and prepares everything automatically.
+At the moment, the built-in Playit setup is **not fully functional**.
 
-Once finished, your server directory will contain everything required to start the server immediately.
+If you want remote access to your server, you'll need to:
 
-For Forge and NeoForge, the installer also performs the server installation process automatically.
+1. Install the official Playit client on your computer.
+2. Create and link an agent manually.
+3. Create the required tunnel from the Playit dashboard.
 
----
-
-📁 Generated Structure
-
-A typical server directory looks like this:
-
-MyServer/
-├── eula.txt
-├── logs/
-├── start.sh
-├── server.jar
-└── ...
-
-Forge and NeoForge installations will generate their own files according to their official installers.
+A future update will automate this process from within the application.
 
 ---
 
-🎯 Project Goals
+## Supported Server Software
 
-This project aims to provide a fast and easy way to create Minecraft servers without requiring users to manually search for downloads, install loaders, or configure startup scripts.
-
-The focus is on:
-
-- Simplicity
-- Automation
-- Compatibility
-- Clean code
-- Easy maintenance
+- Vanilla
+- Paper
+- Purpur
+- Fabric
+- Forge
+- NeoForge
 
 ---
 
-🤝 Contributions
+## Notes
 
-Contributions, suggestions, and bug reports are always welcome.
-
-Feel free to open an Issue or submit a Pull Request.
+- The application is available in **English**.
+- An internet connection is required to download server files.
+- Forge and NeoForge installations may take a little longer since they need to run their own installer.
 
 ---
 
-📄 License
+## Contributing
 
-This project is released under the MIT License.
+Bug reports, feature requests and pull requests are always welcome.
+
+If you find an issue, feel free to open one.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
