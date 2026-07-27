@@ -1,0 +1,8 @@
+{
+  "name": "Minecraft Server Installer",
+  "description": "Automated web-based Minecraft server installer and management suite supporting Vanilla, Paper, Purpur, Fabric, Forge, and NeoForge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
